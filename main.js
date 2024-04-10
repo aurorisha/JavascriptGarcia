@@ -67,7 +67,7 @@ const comprobarCantidad = (cantidad) => { //El cantidad de aqui es un parametro
 // 2 Esta funcion nos permitira calcular el costo de instalacion mediante condicionales
 
 const calcularInstalacion = (precioInstalacion) => { 
-    let cantidadMinisplits = comprobarCantidad(cantidad++);
+    let cantidadMinisplits = comprobarCantidad(cantidad);
     let costoInstalacion = 0;
     let preguntaInstalacion = confirm("¿Necesitas servicio de instalacion?"); // 2.1 Aqui le preguntaremos al usuario si quiere envio y ese valor se aloja en la variante solicitaEnvio como true si da OK
     
@@ -75,7 +75,7 @@ const calcularInstalacion = (precioInstalacion) => {
         costoInstalacion = cantidadMinisplits*550;
         alert("El costo de instalacion total es $"+costoInstalacion+" El total de tu compra es $"+(costoInstalacion+precioInstalacion));
     } else if (preguntaInstalacion && cantidadMinisplits <= 4 && cantidadMinisplits !== 0) { // Si la cantidad final de los equipos es igual o menor a 4 se multiplicara cantidad por 1100
-        costoInstalacion = cantidadMinisplits*1100;
+        costoInstalacion = cantidad*1100;
         alert("El costo de instalacion total es $"+costoInstalacion+" El total de tu compra es $"+(costoInstalacion+precioInstalacion));
     } else { // No se cobra instalacionf
         alert("No se cobrara servicio de instalación. El total de tu compra es $"+(costoInstalacion+precioInstalacion));
@@ -105,4 +105,3 @@ function calcularEnvio(precioEnvio) {
 
 ///---------------------- Invocacion de funciones
 
-comprarEquipos(); // Aqui estoy llamando  la funcion de comprar para que se ejectue
