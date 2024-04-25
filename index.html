@@ -4,63 +4,179 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Cotizador de Minisplits</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/cafaecdf6c.js" crossorigin="anonymous"></script>
+    <title>Tienda de Minisplits</title>
 </head>
+<header id="header" class="header">
+    <nav>
+        <div class="fila">
+            <div class="columnascentro">
+                <div class="icononav">
+                    <img src="img/icono-minisplit.png" alt="">
+                </div>
+                <div class="saludonav">
+                    <p>¡Bienvenido a la Tienda de Climas!</p>
+                </div>
+                <div>
+                    <ul>
+                        <li class="submenu">
+                            <i class="fa-solid fa-cart-shopping fa-2xl" style="color: #ffffff;"></i>
+                            <div id="carrito">
+                                <!--completar el dibujo del carrito -->
+                                <table id="tabla-carrito">
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Marca</th>
+                                            <th>Modelo</th>
+                                            <th>Precio</th>
+                                            <th>Cantidad</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody> <!-- A este body de la tabla ingresaremos los productos a traves de la funcion carritoSitio -->
+                                </table>
+                                <a href="#" id="vaciar-carrito-btn" class="btn-vaciar">Vaciar Carrito</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+</header>
+
 <body>
-    <h1>Bienvenido a la Tienda de Minisplit</h1>
-    <div class="texto">
+    <div class="textoprincipal">
         <h3>Super promoción en equipos</h3>
+        <br>
         <p>¡ENVÍO GRATIS EN COMPRAS MAYORES A $12,000 PESOS!</p>
     </div>
-    <div class="tabla">
-        <table>
-            <tr>
-                <th>Modelo</th>
-                <th>Marca</th>
-                <th>Precio</th>
-            </tr>
-            <tr>
-                <td>Eficiente</td>
-                <td>AURUS</td>
-                <td>$5,500 MXN</td>
-            </tr>
-            <tr>
-                <td>Inverter</td>
-                <td>AURUS</td>
-                <td>$7,500 MXN </td>
-            </tr>
-                <td>Inverter Pro</td>
-                <td>AURUS</td>
-                <td>$13,000 MXN </td>
-            </tr>            
-            <tr>
-                <td>Convencional</td>
-                <td>AUX</td>
-                <td>$6,500 MXN</td>
-            </tr>
-            <tr>
-            <tr>
-                <td>Inverter</td>
-                <td>AUX</td>
-                <td>$9,000 MXN </td>
-            </tr>
-            <tr>
-                <td>Alpha</td>
-                <td>AUX</td>
-                <td>$14,500 MXN </td>
-            </tr>
-        </table>
-        <div class="leyenda">
-            <p>Precios no incluyen IVA</p>
+
+    <div class="subtexto">
+        <p>Para pedidos de 1 a 5 equipos: Costo de instalación $1,100 por equipo</p>
+        <p>Para pedidos mayores a 6 equipos: Costo de instalación $550 por equipo</p>
+    </div>
+    <div id="lista-inventario" class="colresponsive">
+        <div class="gridproducto">
+            <div class="col-grid">
+                <div class="celdagrid">
+                    <div class="imgproduct">
+                        <div class="marcalogo">
+                            <img src="img/logo-aurus-01.png" alt="AURUS">
+                        </div>
+                        <img class="minisplit-foto" src="img/aurus-convencional.jpg" alt="aurus convencional"></div>
+                    <div class="textproduct">
+                        <div class="textinfo">
+                            <h4>Efficiency</h4>
+                            <p class="marcaOculto">AURUS</p>
+                            <p class="precio">$5,500</p>
+                        </div>
+                        <div class="btn-shop">
+                            <a href="#" class="boton-shop comprar-producto" data-id="1">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="celdagrid">
+                    <div class="imgproduct">
+                        <div class="marcalogo">
+                            
+                            <img src="img/logo-aux.png" alt="AUX">
+                        </div>
+                        <img class="minisplit-foto" src="img/aux-convencional.jpg" alt="aux convencional">
+                    </div>
+                    <div class="textproduct">
+                        <div class="textinfo">
+                            <h4>Convencional</h4>
+                            <p class="marcaOculto">AUX</p>
+                            <p class="precio">$6,500</p>
+                        </div>
+                        <div class="btn-shop">
+                            <a href="#" class="boton-shop comprar-producto" data-id="4">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-grid">
+                <div class="celdagrid">
+                    <div class="imgproduct">
+                        <div class="marcalogo">
+                            <img src="img/logo-aurus-01.png" alt="AURUS">
+                        </div>
+                        <img class="minisplit-foto" src="img/aurus-inverter.jpg" alt="aurus inverter"></div>
+                    <div class="textproduct">
+                        <div class="textinfo">
+                            <h4>Inverter</h4>
+                            <p class="marcaOculto">AURUS</p>
+                            <p class="precio">$7,500</p>
+                        </div>
+                        
+                        <div class="btn-shop">
+                            <a href="#" class="boton-shop comprar-producto" data-id="2">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="celdagrid">
+                    <div class="imgproduct">
+                        <div class="marcalogo">
+                            <img src="img/logo-aux.png" alt="AUX">
+                        </div>
+                        <img class="minisplit-foto" src="img/aux-inverter.jpg" alt="AUX Inverter"></div>
+                    <div class="textproduct">
+                        <div class="textinfo">
+                            <h4>Inverter</h4>
+                            <p class="marcaOculto">AUX</p>
+                            <p class="precio">$9,000</p>
+                        </div>
+                        <div class="btn-shop">
+                            <a href="#" class="boton-shop comprar-producto" data-id="5">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-grid">
+                <div class="celdagrid">
+                    <div class="imgproduct">
+                        <div class="marcalogo">
+                            <img src="img/logo-aurus-01.png" alt="AURUS">
+                        </div>
+                        <img class="minisplit-foto" src="img/aurus-inverter-pro.jpg" alt="aurus inverer pro"></div>
+                    <div class="textproduct">
+                        <div class="textinfo">
+                            <h4>Pro</h4>
+                            <p class="marcaOculto">AURUS</p>
+                            <p class="precio">$13,000</p>
+                        </div>
+                        <div class="btn-shop">
+                            <a href="#" class="boton-shop comprar-producto" data-id="3">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="celdagrid">
+                    <div class="imgproduct">
+                        <div class="marcalogo">
+                            <img src="img/logo-aux.png" alt="AUX">
+                        </div>
+                        <img class="minisplit-foto" src="img/aux-inverter-alpha.jpg" alt="AUX Inverter Alpha"></div>
+                    <div class="textproduct">
+                        <div class="textinfo">
+                            <h4>Alpha</h4>
+                            <p class="marcaOculto">AUX</p>
+                            <p class="precio">$14,500</p>
+                        </div>
+                        <div class="btn-shop">
+                            <a href="#" class="boton-shop comprar-producto" data-id="6">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
-    <button>Cotiza Aqui</button>
-    <div class="subtexto">
-        <p>*Para pedidos de 1 a 5 equipos: Costo de instalación $1,100 por equipo</p>
-        <p>**Para pedidos mayores a 6 equipos: Costo de instalación $550 por equipo</p>
-    </div>
-    <script src="inventario.js"></script>
-    <script src="main2.js"></script> 
+    <script src="nuevomain.js"></script> 
 </body>
 </html>

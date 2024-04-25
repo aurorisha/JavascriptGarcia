@@ -140,5 +140,4 @@ const comprar = () => { // 2 Ordena precios y dirije a ProductosBaratos (Inicio 
     }
 };
 
-
-comprar()  // 1 Inicia proceso y dirije a ordenar lista (arriba )
+  // 1 Inicia proceso y dirije a ordenar lista (arriba )
