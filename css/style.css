@@ -276,10 +276,22 @@ header {
     border-radius: 8px;
     margin: 1rem;
     align-content: center;
+    transition: all 0.1s ease-in-out;
 }
 
 .boton-shop:hover {
+    padding: 0.9rem 1.6rem;
+    margin: 0.8rem;
+    font-size: 16px;
     background-color: var(--bg2blue);
+    color: white;
+}
+
+.boton-shop:active {
+    padding: 0.7rem 1.4rem;
+    margin: 1.1rem;
+    font-size: 13px;
+    background-color: var(--btncyan);
     color: white;
 }
 
