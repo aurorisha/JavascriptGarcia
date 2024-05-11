@@ -1,6 +1,6 @@
 :root {
-    --mainblue: rgb(31, 97, 196);
-    --secondblue: rgb(30, 30, 115);
+    --mainblue: #1f61c4;
+    --secondblue: #1e1e73;
     --pastelblue: rgb(218, 237, 255);
     --bgblue: rgb(118, 172, 253);
     --bg2blue: rgb(71, 131, 221);
@@ -15,24 +15,135 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     color:var(--secondblue)
 }
 
 h1 { 
-    font-size: 3rem;
-    background-color:var(--pastelblue)
+    font-size: 2rem;
 }
 
 h3 { 
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 0;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+p {
+    font-weight: 400;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--secondblue);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footSup {
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.footSup img {
+    width: 300px;
+    height: auto;
+}
+
+.contacto {
+    width: 300px;
+    height: auto;
+}
+
+.line { 
+    width: 300px;
+    border-bottom: solid 1px var(--btncyan);
+    margin: 0.4rem 0 0.8rem;
+}
+
+.contacto .titulo{
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 2rem;
+}
+
+.contacto p{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.footInf {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0 1.5rem;
+}
+
+.footInf p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.opening-text {
+    height: 80px;
+    margin: 1rem 0;
+}
+
+.texto {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+}
+
+.subtexto {
+    font-size: 1rem;
+    background-color:var(--bg2blue);
+    color: white;
+    height: 70px;
+    margin: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.leyenda {
+    font-size: 1.5rem;
+    background-color:var(--bg2blue);
+    color: white;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .submenu {
     position: relative;
     list-style: none;
+    width: 100%;
+    padding: 18px;
+    border-radius: 100px;
+}
+
+.submenu:hover {
+    background-color: var(--bgblue);
+        transition: 0.2s;
 }
 
 #img-carrito {
@@ -62,32 +173,6 @@ h3 {
     min-width: 5px;
 }
 
-.texto {
-    font-size: 1rem;
-    background-color: var(--bgblue);
-    color: white;
-    width: 80%;
-    height: auto;
-    max-width: 800px;
-    margin: auto;
-    padding: 1rem 0;
-}
-
-.subtexto {
-    font-size: 1rem;
-    font-weight: bold;
-    background-color:var(--pastelblue);
-    height: auto;
-    margin: auto;
-    padding: 10px;
-}
-
-.leyenda {
-    font-size: 1rem;
-    height: auto;
-    margin: 10px auto;
-    color:var(--secondblue);
-}
 
 table {
     font-size: 1rem;
@@ -100,12 +185,12 @@ table {
 }
 
 th, td {
-    padding: 12px 15px;
-    text-align: left;
+    padding: 12px 20px;
+    text-align: center;
     border-bottom: 1px solid var(--pastelblue) 
 }
 
-carrito a {
+.carrito a {
     text-decoration: none;
 }
 
@@ -148,17 +233,17 @@ header {
     width: 100%;
     position: fixed;
     top: 0px;
-    background-color: var(--mainblue);
+    background-color: var(--secondblue);
     z-index: 1;
-
+    height: 80px;
 }
+
 
 .columnascentro {
     width: 80%;
-    height: 70px;
     margin: auto;
     max-width: 1280px;
-    max-height: 70px;
+    height: 80px;
     top: 0px;
     display: flex;
     align-items: center;
@@ -166,20 +251,53 @@ header {
 }
 
 .saludonav {
-    color: var(--pastelblue);
-    font-weight: 600;
+    color: white;
     font-size: 1.5rem;
+    width: 35%;
+    height: 100%;
 }
 
-.textoprincipal {
-    padding: 6rem 0 3rem 0;
-    text-align: center;
+.saludonav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.saludonav li {
+    font-size: 1.2rem;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    width: 40%;
+    height: 50%;
+    border-radius: 100px;
+}
+
+.saludonav li:hover {
     background-color: var(--bgblue);
-    background-position: center;
+    transition: 0.2s;
+}
+
+.saludonav a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+.banner-principal  {
+    margin-top: 4%;
+}
+
+.banner-principal img {
+    margin: 0;
+    padding: 0;
     background-repeat: no-repeat;
     background-size: cover;
-    color:var(--secondblue);
+    background-position: center center;
+    width: 100%;
 }
+
 
 /* Tienda */
 
@@ -188,8 +306,7 @@ header {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 1rem;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
 }
 
 .gridproducto {
@@ -210,9 +327,8 @@ header {
     text-decoration: none;
     font-weight: 400;
     overflow: hidden;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     margin-bottom: 1rem;
-    background-color: var(--mainblue);
 }
 
 .imgproduct {
@@ -220,7 +336,9 @@ header {
     overflow: hidden;
     transition: 0.3s ease-in-out;
     position: relative;
-    margin: 2rem;
+    margin: 1rem 2rem 1.5rem;
+    border: solid 2px var(--pastelblue);
+    box-shadow:#1e3d7315 0px 3px 5px;
 }
 
 .imgproduct:hover {
@@ -241,22 +359,22 @@ header {
 }
 
 .textproduct {
-    padding: 0.5rem 1rem;
+    padding: 0 1rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background-color: var(--pastelblue);
 }
 
 .textinfo h4{
     line-height: 1.2rem;
-    font-size: 1rem;
 }
 
 .textinfo p{
+    font-style: italic;
     line-height: 2rem;
     font-size: 1.3rem;
-    font-weight: bold;
+    font-weight: 800;
     color: var(--mainblue);
 }
 
@@ -265,38 +383,39 @@ header {
 }
 
 .boton-shop {
-    background-color:  var(--secondblue);
+    background-color:  var(--btncyan);
     border: none;
-    color: white;
-    padding: 0.8rem 1.5rem;
+    color: var(--secondblue);
+    padding: 0.4rem 1rem;
     text-align: center;
     text-decoration: none;
     display: inline;
     font-size: 14px;
-    border-radius: 8px;
-    margin: 1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    margin: 0 0.5rem;
     align-content: center;
-    transition: all 0.1s ease-in-out;
+    transition: all 0.15s ease-in-out;
 }
 
 .boton-shop:hover {
-    padding: 0.9rem 1.6rem;
-    margin: 0.8rem;
-    font-size: 16px;
+    padding: 0.5rem 1.1rem;
+    font-size: 15px;
+    margin: 0 0.4rem;
     background-color: var(--bg2blue);
     color: white;
 }
 
 .boton-shop:active {
-    padding: 0.7rem 1.4rem;
-    margin: 1.1rem;
+    padding: 0.3rem 0.9rem;
     font-size: 13px;
-    background-color: var(--btncyan);
+    margin: 0 0.6rem;
+    background-color: var(--bg2blue);
     color: white;
 }
 
 .btn-shop {
-    padding: 1rem 0rem;
+    padding: 0.5rem 0.8rem;
 }
 
 .btn-vaciar {
@@ -310,4 +429,691 @@ header {
 
 .table {
     display: block;
+}
+
+
+
+@media  (min-width: 850px) and (max-width: 1200px)   {
+
+    header {
+        height: 60px;
+    }
+
+    
+.saludonav {
+    font-size: 1rem;
+    width: 40%;
+
+}
+
+.saludonav li {
+    font-size: 1rem;
+}
+
+
+    .footSup {
+        width: 70%;
+        margin: 1rem 0;
+    }
+
+    .footSup img {
+        width: 250px;
+        height: auto;
+    }
+
+    .contacto {
+        width: 250px;
+        height: auto;
+    }
+
+    .line { 
+        width: 250px;
+        margin: 0.4rem 0 0.8rem;
+    }
+
+    .contacto .titulo{
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.5rem;
+    }
+
+    .contacto p{
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .footInf {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0.2rem 0 1rem;
+    }
+
+    .footInf p {
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+
+    table {
+        font-size: 0.8rem;
+        color: var(--mainblue);
+        width: 40%;
+        max-width: 350px;
+        margin: auto;
+        padding: 0.5rem 0 0 0;
+        margin-bottom: 1rem;
+    }
+
+    th, td {
+        padding: 8px 10px;
+        text-align: left;
+        border-bottom: 1px solid var(--pastelblue) 
+    }
+
+
+    button {
+        width: 100px;
+        margin: 5px 0 10px 0;
+        font-size: 1rem;
+        height: 20px;
+        border-radius: 25px;
+
+    }
+
+
+    
+    .colresponsive {
+        padding-top: 0;
+    }
+    
+    .columnascentro {
+        width: 90%;
+        margin: auto;
+        max-width: 1200px;
+        height: 60px;
+        top: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;    
+    }
+    
+    .saludonav {
+        font-size: 1.2rem;
+    }
+    
+    .banner-principal  {
+        margin-top: 5%;
+    }
+    
+
+    h1 { 
+        font-size: 1.8rem;
+    }
+    
+    h3 { 
+        font-size: 1.5rem;
+    }
+    
+    .opening-text {
+        height: 60px;
+        margin: 0.7rem 0;
+    }
+    
+    .texto {
+        font-size: 0.8rem;
+        padding: 0.3rem 0;
+    }
+    
+    .subtexto {
+        font-size: 0.8rem;
+        height: 55px;
+        padding: 10px;
+    }
+    
+    .leyenda {
+        font-size: 1rem;
+        height: 55px;
+    }
+
+    
+    .fa-xl {
+        font-size: 1.3em;
+    }
+
+    .submenu {
+        padding: 10px;
+        border-radius: 100px;
+    }
+    
+    .submenu:hover {
+        background-color: var(--bgblue);
+            transition: 0.2s;
+    }
+
+    /* Tienda */
+
+    .colresponsive {
+        width: 90%;
+        padding-bottom: 2rem;
+    }
+
+    .imgproduct {
+    margin: 1rem;
+    }
+
+    .imgproduct:hover {
+        transform: scale(1.08,1.08);
+        overflow: hidden;
+    }
+
+
+.textproduct {
+    padding: 0.5rem 0.5rem;
+}
+
+.textinfo h4{
+    line-height: 1.2rem;
+    font-size: 0.8rem;
+}
+
+.textinfo p{
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+.boton-shop {
+    padding: 0.6rem 1rem;
+    font-size: 14px;
+    border-radius: 50px;
+    margin: 0.8rem;
+}
+
+.btn-shop {
+    padding: 0.8rem 0rem;
+}
+
+.btn-vaciar {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+}
+
+
+}
+
+@media (min-width: 600px) and (max-width: 850px)   {
+
+    header {
+        height: 70px;
+        width: 100%;
+    }
+    
+    
+.saludonav {
+    color: white;
+    font-size: 1rem;
+    width: 50%;
+}
+
+.saludonav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.saludonav li {
+    font-size: 1rem;
+    width: 40%;
+    border-radius: 100px;
+}
+
+.saludonav li:hover {
+    background-color: var(--bgblue);
+    transition: 0.2s;
+}
+
+.saludonav a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+
+    .footSup {
+        width: 90%;
+        margin: 1rem 0;
+    }
+
+    .footSup img {
+        width: 200px;
+        height: auto;
+    }
+
+    .contacto {
+        width: 200px;
+        height: auto;
+    }
+
+    .line { 
+        width: 180px;
+        margin: 0.4rem 0 0.8rem;
+    }
+
+    .contacto .titulo{
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.5rem;
+    }
+
+    .contacto p{
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    .footInf {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0.2rem 0 1rem;
+    }
+
+    .footInf p {
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+
+    table {
+        font-size: 0.8rem;
+        color: var(--mainblue);
+        width: 40%;
+        max-width: 150px;
+        margin: auto;
+        padding: 0.2rem 0 0 0;
+        margin-bottom: 1rem;
+    }
+
+    th, td {
+        padding: 5px 8px;
+        text-align: left;
+        border-bottom: 1px solid var(--pastelblue) 
+    }
+
+
+    button {
+        width: 100px;
+        margin: 5px 0 10px 0;
+        font-size: 1rem;
+        height: 20px;
+        border-radius: 25px;
+
+    }
+        
+    .icononav { 
+        height: 70px;
+    }
+
+    .icononav img { 
+        height: 60px;
+    }
+
+    .icononav img:hover { 
+        transform: scale(1,1);
+    }
+
+    .fa-xl {
+        font-size: 1.5em;
+    }
+
+    .submenu {
+        padding: 13px;
+        border-radius: 100px;
+    }
+    
+    .submenu:hover {
+        background-color: var(--bgblue);
+            transition: 0.2s;
+    }
+
+    
+    .colresponsive {
+        padding-top: 0;
+    }
+    
+    .columnascentro {
+        width: 95%;
+        margin: auto;
+        height: 65px;
+        top: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;    
+    }
+
+    
+    .banner-principal  {
+        margin-top: 8%;
+        width: 100%;
+    }
+    
+
+    h1 { 
+        font-size: 1.5rem;
+    }
+    
+    h3 { 
+        font-size: 1.2rem;
+    }
+    
+    .opening-text {
+        height: 50px;
+        margin: 0.8rem 0;
+    }
+    
+    .texto {
+        font-size: 0.8rem;
+        padding: 0.5rem 0;
+    }
+    
+    .subtexto {
+        font-size: 0.6rem;
+        height: 70px;
+        padding: 20px;
+    }
+    
+    .leyenda {
+        font-size: 1rem;
+        height: 55px;
+    }
+
+    /* Tienda */
+
+    
+    .gridproducto {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 0.5rem;
+    }
+
+    .col-grid {
+        margin-top: 0.5rem;
+    }
+
+    .colresponsive {
+        width: 60%;
+        padding-bottom: 0.8rem;
+    }
+
+    .imgproduct {
+    margin: 1rem;
+    }
+
+    .imgproduct:hover {
+        transform: none;
+    }
+
+
+.textproduct {
+    padding: 0.8rem 0.5rem;
+}
+
+.textinfo h4{
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+.textinfo p{
+    line-height: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.boton-shop {
+    padding: 0.4rem 1rem;
+    font-size: 18px;
+    border-radius: 50px;
+    margin: 0 0.8rem;
+}
+
+.btn-shop {
+    padding: 0.5rem 0.8rem;
+
+}
+
+.btn-vaciar {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+}
+
+
+}
+
+
+@media (max-width: 600px)   {
+
+    header {
+        height: 65px;
+        width: 100%;
+    }
+
+    
+    
+.footSup {
+    width: 100%;
+    flex-direction: column;
+    margin: 0.5rem 0;
+}
+
+.footSup img {
+    width: 200px;
+    height: auto;
+}
+
+.contacto {
+    width: 180px;
+    height: auto;
+}
+
+.line { 
+    width: 180px;
+    margin: 0.4rem 0 0.8rem;
+}
+
+.contacto .titulo{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.3rem;
+}
+
+.contacto p{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+.footInf p {
+    font-size: 10px;
+    font-weight: 300;
+}
+    
+    .carrito {
+    margin-right: 20px;
+    }
+
+    
+    table {
+        font-size: 0.6rem;
+        color: var(--mainblue);
+        width: 20%;
+        max-width: 150px;
+        margin: auto;
+        padding: 0.2rem 0 0 0;
+        margin-bottom: 1rem;
+    }
+
+    th, td {
+        padding: 3px 5px;
+        text-align: left;
+        border-bottom: 1px solid var(--pastelblue) 
+    }
+
+    th, td, img {
+        width: 100%;
+    }
+
+
+    button {
+        width: 30px;
+        margin: 5px 0 8px 0;
+        font-size: 0.5rem;
+        height: 20px;
+        border-radius: 25px;
+
+    }
+        
+        
+    .icononav { 
+        height: 65px;
+    }
+
+    .icononav img { 
+        height: 65px;
+    }
+
+    .icononav img:hover { 
+        transform: scale(1,1);
+    }
+
+
+    .fa-xl {
+        font-size: 1.3em;
+    }
+
+    .submenu {
+        padding: 9px;
+        border-radius: 50px;
+    }
+    
+    .submenu:hover {
+        background-color: var(--bgblue);
+            transition: 0.2s;
+    }
+    
+    .colresponsive {
+        padding-top: 0;
+    }
+    
+    .columnascentro {
+        width: 100%;
+        margin: auto;
+        height: 65px;
+        top: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;    
+    }
+    
+    .saludonav {
+    display: none;
+    }
+    
+    .banner-principal  {
+        margin-top: 13%;
+        width: 100%;
+    }
+    
+
+    h1 { 
+        font-size: 1rem;
+    }
+    
+    h3 { 
+        font-size: 0.8rem;
+    }
+    
+    .opening-text {
+        height: 40px;
+        margin: 0.7rem 0;
+    }
+    
+    .texto {
+        font-size: 0.6rem;
+        padding: 0.3rem 0;
+    }
+    
+    .subtexto {
+        font-size: 0.5rem;
+        height: 70px;
+        padding: 10px;
+    }
+    
+    .leyenda {
+        font-size: 0.8rem;
+        height: 55px;
+    }
+    /* Tienda */
+
+    
+    .gridproducto {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        gap: 0.5rem;
+    }
+
+    .col-grid {
+        margin-top: 0.5rem;
+    }
+
+    .colresponsive {
+        width: 80%;
+        padding-bottom: 0.5rem;
+    }
+
+    .imgproduct {
+    margin: 0.8rem;
+    }
+
+    .imgproduct:hover {
+        transform: none;
+    }
+
+
+.textproduct {
+    padding: 0.5rem 0.5rem;
+}
+
+.textinfo h4{
+    line-height: 1.2rem;
+    font-size: 0.8rem;
+}
+
+.textinfo p{
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+.boton-shop {
+
+    padding: 0.6rem 1rem;
+    font-size: 14px;
+    border-radius: 50px;
+    margin: 0.8rem;
+}
+
+.btn-shop {
+    padding: 0.8rem 0.5rem;
+}
+
+
+.btn-vaciar {
+    padding: 0.5rem 0.8rem;
+    margin: 0.5rem 0;
+    font-size: 0.7rem;
+}
+
+
 }
