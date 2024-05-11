@@ -4,24 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;0,800;1,200;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/cafaecdf6c.js" crossorigin="anonymous"></script>
-    <title>Tienda de Minisplits</title>
+    <title>Tienda de Minisplits Nuevos</title>
 </head>
 <header id="header" class="header">
     <nav>
         <div class="fila">
             <div class="columnascentro">
                 <div class="icononav">
-                    <img src="img/icono-minisplit.png" alt="">
+                    <img src="img/Climaris Logo Blanco.svg" alt="">
                 </div>
                 <div class="saludonav">
-                    <p>¡Bienvenido a la Tienda de Climas!</p>
+                    <ul>
+                        <li> <a href="">Tienda</a> </li>
+                        <li> <a href="">Mi cuenta</a> </li>
+
                 </div>
-                <div>
+                <div class="carrito">
                     <ul>
                         <li class="submenu">
-                            <i class="fa-solid fa-cart-shopping fa-2xl" style="color: #ffffff;"></i>
+                            <i id="carritoIcono" class="fa-solid fa-cart-shopping fa-xl" style="color: #ffffff;"></i>
                             <div id="carrito">
                                 <!--completar el dibujo del carrito -->
                                 <table id="tabla-carrito">
@@ -49,15 +55,16 @@
 </header>
 
 <body>
-    <div class="textoprincipal">
-        <h3>Super promoción en equipos</h3>
-        <br>
-        <p>¡ENVÍO GRATIS EN COMPRAS MAYORES A $12,000 PESOS!</p>
+    <div class="banner-principal">
+        <img src="img/Banner.jpg" alt="">
     </div>
 
-    <div class="subtexto">
-        <p>Para pedidos de 1 a 5 equipos: Costo de instalación $1,100 por equipo</p>
-        <p>Para pedidos mayores a 6 equipos: Costo de instalación $550 por equipo</p>
+    <div class="leyenda">
+        <p><b><i>¡ENVÍO GRATIS EN COMPRAS MAYORES A $12,000 PESOS!</i></b></p>
+    </div>
+    <div class="opening-text">
+        <h1>¡Super promociónes en equipos!</h1>
+        <p class="texto"><i>Los Precios no incluyen envío ni instalación.</i></p>
     </div>
     <div id="lista-inventario" class="colresponsive">
         <div class="gridproducto">
@@ -70,12 +77,12 @@
                         <img class="minisplit-foto" src="img/aurus-convencional.jpg" alt="aurus convencional"></div>
                     <div class="textproduct">
                         <div class="textinfo">
-                            <h4>Efficiency</h4>
+                            <h4>Efficiency 1 Ton 220V</h4>
                             <p class="marcaOculto">AURUS</p>
                             <p class="precio">$5,500</p>
                         </div>
                         <div class="btn-shop">
-                            <a href="#" class="boton-shop comprar-producto" data-id="1">Comprar</a>
+                            <a href="#" class="boton-shop comprar-producto" data-id="1">Agregar al Carrito</a>
                         </div>
                     </div>
                 </div>
@@ -89,12 +96,12 @@
                     </div>
                     <div class="textproduct">
                         <div class="textinfo">
-                            <h4>Convencional</h4>
+                            <h4>Convencional 1 Ton 220V</h4>
                             <p class="marcaOculto">AUX</p>
                             <p class="precio">$6,500</p>
                         </div>
                         <div class="btn-shop">
-                            <a href="#" class="boton-shop comprar-producto" data-id="4">Comprar</a>
+                            <a href="#" class="boton-shop comprar-producto" data-id="4">Agregar al Carrito</a>
                         </div>
                     </div>
                 </div>
@@ -109,13 +116,13 @@
                         <img class="minisplit-foto" src="img/aurus-inverter.jpg" alt="aurus inverter"></div>
                     <div class="textproduct">
                         <div class="textinfo">
-                            <h4>Inverter</h4>
+                            <h4>Inverter 1 Ton 220V</h4>
                             <p class="marcaOculto">AURUS</p>
                             <p class="precio">$7,500</p>
                         </div>
                         
                         <div class="btn-shop">
-                            <a href="#" class="boton-shop comprar-producto" data-id="2">Comprar</a>
+                            <a href="#" class="boton-shop comprar-producto" data-id="2">Agregar al Carrito</a>
                         </div>
                     </div>
                 </div>
@@ -127,12 +134,12 @@
                         <img class="minisplit-foto" src="img/aux-inverter.jpg" alt="AUX Inverter"></div>
                     <div class="textproduct">
                         <div class="textinfo">
-                            <h4>Inverter</h4>
+                            <h4>Inverter 1 Ton 220V</h4>
                             <p class="marcaOculto">AUX</p>
                             <p class="precio">$9,000</p>
                         </div>
                         <div class="btn-shop">
-                            <a href="#" class="boton-shop comprar-producto" data-id="5">Comprar</a>
+                            <a href="#" class="boton-shop comprar-producto" data-id="5">Agregar al Carrito</a>
                         </div>
                     </div>
                 </div>
@@ -147,12 +154,12 @@
                         <img class="minisplit-foto" src="img/aurus-inverter-pro.jpg" alt="aurus inverer pro"></div>
                     <div class="textproduct">
                         <div class="textinfo">
-                            <h4>Pro</h4>
+                            <h4>Inverter Pro 1 Ton 220V</h4>
                             <p class="marcaOculto">AURUS</p>
                             <p class="precio">$13,000</p>
                         </div>
                         <div class="btn-shop">
-                            <a href="#" class="boton-shop comprar-producto" data-id="3">Comprar</a>
+                            <a href="#" class="boton-shop comprar-producto" data-id="3">Agregar al Carrito</a>
                         </div>
                     </div>
                 </div>
@@ -164,19 +171,41 @@
                         <img class="minisplit-foto" src="img/aux-inverter-alpha.jpg" alt="AUX Inverter Alpha"></div>
                     <div class="textproduct">
                         <div class="textinfo">
-                            <h4>Alpha</h4>
+                            <h4>Inverter Alpha 1 Ton 220V</h4>
                             <p class="marcaOculto">AUX</p>
                             <p class="precio">$14,500</p>
                         </div>
                         <div class="btn-shop">
-                            <a href="#" class="boton-shop comprar-producto" data-id="6">Comprar</a>
+                            <a href="#" class="boton-shop comprar-producto" data-id="6">Agregar al Carrito</a>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
-    <script src="/js/nuevomain.js"></script> 
+    <div class="subtexto">
+        <p><b>Para pedidos de 1 a 5 equipos:</b> Costo de instalación $1,100 por equipo</p>
+        <p><b>Para pedidos mayores a 6 equipos:</b> Costo de instalación $550 por equipo</p>
+    </div>
+    <footer>
+        <div class="footSup">
+            <div class="imgfoot">
+                <img src="img/Climaris Logo Blanco.svg" alt="">
+            </div>
+            <div class="contacto">
+                <p class="titulo">Contacto</p>
+                <hr class="line">
+                <p>Tel. (81)81-36-84-69 <br>
+                    Cel. 044-811-946-4830 <br>
+                    Calle Falsa 123, Col. Inexistente, <br>
+                    Monterrey, N.L. C.P. 66600
+                </p>
+            </div>
+        </div>
+        <div class="footInf">
+            <p>© 2023 Developed by Auro Garcia. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/nuevomain.js"></script> 
 </body>
 </html>
