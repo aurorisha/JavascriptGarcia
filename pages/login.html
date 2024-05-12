@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;0,800;1,200;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/cafaecdf6c.js" crossorigin="anonymous"></script>
+    <title>Climaris - Inicio de sesion</title>
+</head>
+<header id="header" class="header">
+    <nav>
+        <div class="fila">
+            <div class="columnascentro">
+                <div class="icononav">
+                    <img src="/img/Climaris Logo Blanco.png" alt="">
+                </div>
+                <div class="saludonav">
+                    <ul>
+                        <li> <a href="/index.html">Tienda</a> </li>
+                        <li> <a href="/pages/login.html">Mi cuenta</a> </li>
+
+                </div>
+                <div class="carrito">
+                    <ul>
+                        <li class="submenu">
+                            <i id="carritoIcono" class="fa-solid fa-cart-shopping fa-xl" style="color: #ffffff;"></i>
+                            <div id="carrito">
+                                <!--completar el dibujo del carrito -->
+                                <table id="tabla-carrito">
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Marca</th>
+                                            <th>Modelo</th>
+                                            <th>Precio</th>
+                                            <th>Cantidad</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody> <!-- A este body de la tabla ingresaremos los productos a traves de la funcion carritoSitio -->
+                                </table>
+                                <a href="#" id="vaciar-carrito-btn" class="btn-vaciar">Vaciar Carrito</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+</header>
+
+<body>
+<!--     <div class="banner-principal">
+        <img src="img/Banner.jpg" alt="">
+    </div>
+
+    <div class="leyenda">
+        <p><b><i>¡ENVÍO GRATIS EN COMPRAS MAYORES A $12,000 PESOS!</i></b></p>
+    </div>
+    <div class="opening-text">
+        <h1>¡Super promociónes en equipos!</h1>
+        <p class="texto"><i>Los Precios no incluyen envío ni instalación.</i></p>
+    </div> -->
+
+            <section id="seccion-usuario">
+            <div class="col-usuario" id="cont-padre">
+                <div class="row justify-content-center" id="usuario-fila">
+
+                    <div class="form-card" id="usuario-card">
+                        <div class="form-signin w-70 m-auto text-center">
+                            <form>
+                                <img class="img-form" src="/img/icono-minisplit.png" alt="" width="auto" height="200">
+                                <h1 class="h3 mb-2 fw-normal">¡Bienvenido!</h1>
+                            
+                                <div class="celda-form">
+                                    <label for="floatingInput">Correo o usuario</label>
+                                    <br>
+                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                </div>
+                                <div class="celda-form">
+                                    <label for="floatingPassword">Contraseña</label>
+                                    <br>
+                                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                </div>
+                                <div class="celda-form">
+                                    <label>
+                                    <input type="checkbox" value="remember-me"> Remember me
+                                    </label>
+                                </div>
+                                <button class="button" type="submit">Entrar</button>
+                            </form>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>   
+
+    <footer>
+        <div class="footSup">
+            <div class="imgfoot">
+                <img src="/img/Climaris Logo Blanco.svg" alt="">
+            </div>
+            <div class="contacto">
+                <p class="titulo">Contacto</p>
+                <hr class="line">
+                <p>Tel. (81)81-36-84-69 <br>
+                    Cel. 044-811-946-4830 <br>
+                    Calle Falsa 123, Col. Inexistente, <br>
+                    Monterrey, N.L. C.P. 66600
+                </p>
+            </div>
+        </div>
+        <div class="footInf">
+            <p>© 2023 Developed by Auro Garcia. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/main.js"></script> 
+</body>
+</html>

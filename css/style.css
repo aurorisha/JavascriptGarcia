@@ -431,7 +431,43 @@ header {
     display: block;
 }
 
+.col-usuario {
+    width: auto; 
+    margin: auto;
+    margin-top: 80px;
+    padding: 50px 0 50px 0;
+    background-color: rgb(240, 247, 253);;
+}
 
+.form-card {
+    width: 500px; 
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    border: solid 2px var(--pastelblue);
+    box-shadow: #1e3d734d 0px 3px 5px;
+}
+
+.celda-form {
+    width: 60%;
+    margin: auto;
+    padding: 0.5rem 0;
+}
+
+.img-form {
+    width: 200px;
+    height: auto;
+    padding: 0.5rem 0;
+    transition: all 0.15s ease-in-out;    
+}
+
+.img-form:hover {
+    width: 210px;
+    height: auto;
+    padding: 0.2rem 0;
+
+}
 
 @media  (min-width: 850px) and (max-width: 1200px)   {
 
@@ -889,6 +925,29 @@ header {
     margin: 0.5rem 0;
 }
 
+.col-usuario {
+    margin-top: 60px;
+    padding: 30px 0;
+}
+
+.form-card {
+    width: 380px; 
+}
+
+.celda-form {
+    margin: auto;
+    padding: 0.3rem 0;
+}
+
+.img-form {
+    width: 150px;
+    padding: 0.3rem 0;
+}
+
+.img-form:hover {
+    width: 160px;
+    padding: 0.1rem 0;
+}
 
 }
 
@@ -967,10 +1026,10 @@ header {
 
 
     button {
-        width: 30px;
+        width: 70px;
         margin: 5px 0 8px 0;
-        font-size: 0.5rem;
-        height: 20px;
+        font-size: 0.8rem;
+        height: 30px;
         border-radius: 25px;
 
     }
@@ -1116,4 +1175,30 @@ header {
 }
 
 
+.col-usuario {
+    margin-top: 60px;
+    padding: 30px 0;
 }
+
+.form-card {
+    width: 300px; 
+}
+
+.celda-form {
+    margin: auto;
+    padding: 0.2rem 0;
+}
+
+.img-form {
+    width: 100px;
+    padding: 0.1rem 0;
+}
+
+.img-form:hover {
+    width: 100px;
+    padding: 0.1rem 0;
+}
+
+}
+
+
