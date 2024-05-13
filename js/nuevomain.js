@@ -40,7 +40,6 @@ function agregarAlCarrito(evt) {
     if(evt.target.classList.contains("comprar-producto")) { // si el objetivo del click e contiene la clase "comprar-producto" entonces lo cuenta
         const producto = evt.target.parentElement.parentElement.parentElement; 
         //Al cumplirse, regresara como variable producto el contenedor padre que tiene ese elemento, en este caso el boton y su elemento padre es el DIV textproduct
-
     leerDatosMinisplit(producto);
 
     }
